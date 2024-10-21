@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Fondo suave */
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #007BFF, #0056b3); /* Gradiente atractivo */
+    color: white;
+    padding: 120px 20px; /* Espacio superior aumentado */
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3.5rem; /* Tamaño grande */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+}
+
+header p {
+    font-size: 1.6rem; /* Tamaño de texto mayor */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos de botones */
+.btn {
+    background: white;
+    color: #007BFF;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px; /* Bordes más redondeados */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3; /* Cambiar fondo al pasar el mouse */
+    color: white;
+    transform: translateY(-5px); /* Efecto de elevación más notable */
+}
+
+section {
+    padding: 60px 20px;
+}
+
+#features {
+    background-color: #ffffff; /* Fondo blanco para las características */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra más intensa */
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.8rem; /* Tamaño del subtítulo aumentado */
+    color: #007BFF; /* Color azul profesional */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 1.5px; /* Espaciado entre letras ajustado */
+}
+
+/* Animación del subtítulo */
+h2 {
+    opacity: 0; 
+    transform: translateY(-30px) scale(0.9); /* Desplazamiento hacia arriba y escala inicial */
+    animation: fadeInUpScale 1s forwards; /* Cambiar a la nueva animación */
+}
+
+/* Definición de la nueva animación */
+@keyframes fadeInUpScale {
+    0% {
+        opacity: 0; 
+        transform: translateY(-30px) scale(0.9); /* Comienza invisible y ligeramente más pequeño */
+    }
+    50% {
+        opacity: 0.5; /* Aumenta la opacidad a la mitad de la animación */
+        transform: translateY(-15px) scale(1); /* Aumenta el tamaño y reduce el desplazamiento */
+    }
+    100% {
+        opacity: 1; 
+        transform: translateY(0) scale(1); /* Termina visible y en su tamaño original */
+    }
+}
+
+
+@keyframes fadeInUp {
+   to {
+       opacity: 1; 
+       transform: translateY(0); 
+   }
+}
+
+/* Estilo de las características */
+.feature {
+   background-color: #f1f9ff; 
+   border-radius: 15px; /* Bordes más suaves */
+   padding: 30px; 
+   margin-bottom: 20px;
+   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+   transition: transform .3s ease-in-out, box-shadow .3s ease-in-out; 
+}
+
+.feature:hover {
+   transform: translateY(-5px); 
+   box-shadow: 0 12px 30px rgba(0, 0, 0, .25); 
+}
+
+.feature h3 {
+   color:#007BFF; 
+   margin-bottom:.5rem; 
+   transition:.2s ease-in-out; 
+}
+
+.feature:hover h3 {
+   color:#0056b3; 
+}
+
+/* Estilo del formulario */
+form {
+   display: flex;
+   flex-direction: column;
+}
+
+input,
+textarea {
+   margin-bottom: .75rem;
+   padding:.75rem;
+   border-radius:.5rem; 
+   border:none; 
+   box-shadow:inline -1px -1px rgba(255,255,255,.5), inset -2px -2px rgba(255,255,255,.2); 
+}
+
+input::placeholder,
+textarea::placeholder {
+   color:#aaa; 
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+   outline:none; 
+   box-shadow:inline -1px -1px rgba(255,255,255,.5), inset -2px -2px rgba(255,255,255,.4); 
+}
+
+/* Estilo del botón de envío del formulario */
+button {
+   background-color:#007BFF; 
+   color:white; 
+   padding:.75rem .75rem; 
+   border-radius:.5rem; 
+   border:none; 
+   cursor:pointer; 
+   transition:.3s ease-in-out; 
+}
+
+button:hover {
+   background-color:#0056b3; 
+}
+
+/* Estilo del footer */
+footer {
+   background-color:#333; 
+   color:white; 
+   text-align:center; 
+   padding:.75rem ; 
+}
